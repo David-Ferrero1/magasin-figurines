@@ -1,0 +1,81 @@
+html{
+    font-family: 'Raleway', sans-serif;
+}
+h1{
+    background-color: #c80000;
+    color: white;
+    font-size: 2.5em;
+    padding: .5em;
+}
+.titre{
+    font-size: .3em;
+}
+.selection a {
+    text-decoration: none;
+}
+footer, h2{
+    background-color: #666666;
+    color: white;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+footer{
+    margin-top: 1.5rem;
+}
+h2{
+    font-size: 1.3em;
+    padding: .5em;
+}
+.h2{
+    font-style: italic;
+}
+#fiche{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    width: 250px;
+    border: #ccc 1px solid; 
+    margin: .5rem;
+    padding: .3rem;
+}
+img{
+    width: 95%;
+    margin: .5rem;
+}
+.soustitre{
+    color: #ccc;
+    font-size: .8rem;
+    text-transform: uppercase;
+    margin: .5rem 0;
+    border-bottom: 1px solid #ccc;
+    padding: .3rem;
+}
+h3{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: .8rem 0;
+    
+}
+.panier {
+    background-color: #c80000;
+    display: flex;
+    color: white;
+    padding: 1rem;
+    justify-content: space-between;
+}
+article{
+    margin: 1rem 0;
+}
+em{
+    text-decoration: line-through;
+}
+.panier strong{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.panier p{
+    font-size: .8rem;
+}

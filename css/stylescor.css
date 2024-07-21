@@ -1,0 +1,332 @@
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+em {
+  font-style: italic;
+}
+
+.header {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.header,
+.footer {
+  color: white;
+}
+
+.header__title {
+  background-color: #c80000;
+  font-size: 2.3rem;
+  padding: 0.5em;
+  font-weight: 700;
+}
+
+.header__title__detail {
+  font-size: 0.8rem;
+}
+
+.header__subtitle,
+.footer {
+  background-color: #666;
+  text-align: center;
+  padding: 0.8em 0;
+}
+
+/* Début shop */
+#shop {
+  display: flex;
+  max-width: 1000px;
+  /*  TOP RIGHT BOTTOM LEFT */
+  margin: 150px auto 2rem auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.figure {
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 0.3rem;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  transition: filter 0.5s ease-in;
+}
+
+.figure:hover {
+  filter: grayscale(1);
+}
+
+.figure__discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #666;
+  color: white;
+  font-weight: bold;
+  border: 5px solid #eee;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  border-radius: 50%;
+}
+
+.figure__content {
+  padding: 0.3rem;
+}
+
+.figure__picture {
+  width: 100%;
+}
+
+.figure__game {
+  text-transform: uppercase;
+  color: #ccc;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding-bottom: 0.15em;
+}
+
+.figure__name {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin: 0.6em 0;
+}
+
+.figure__desc {
+  font-size: 1rem;
+}
+
+.figure__purchase {
+  margin-top: 1em;
+  background-color: #c80000;
+  color: white;
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.figure__purchase__oldprice {
+  text-decoration: line-through;
+}
+
+.figure__purchase__discounted {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.fixed__sales {
+  text-transform: uppercase;
+  background-color: #c80000;
+  color: white;
+  font-weight: bold;
+  position: fixed;
+  top: 45%;
+  left: 0;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  padding: 1em 0.5em;
+  font-size: 0.8rem;
+  letter-spacing: -2px;
+  border-radius: 0 10px 10px 0;
+  transition: all 0.5s ease-in;
+}
+
+.fixed__sales:hover {
+  padding-left: 10em;
+}
+
+.footer {
+  font-size: 0.8rem;
+}
+
+/* Fin shop */
+
+/* Début panier (tableau) */
+
+.table {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 3px 4px 0px rgba(196, 196, 196, 1);
+  margin-bottom: 1em;
+}
+
+.table__header {
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #ccc;
+  line-height: 2.2rem;
+}
+
+.table__row {
+  line-height: 2.5rem;
+}
+.table__row:nth-child(odd) {
+  background-color: lightgrey;
+}
+.amount__input {
+  width: 3em;
+  text-align: center;
+}
+
+.amount__delete {
+  color: #c80000;
+  text-decoration: underline;
+  font-size: 0.8rem;
+  margin-left: 1em;
+}
+
+.table__footer {
+  font-weight: bold;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.table__footer th,
+.table__footer td {
+  padding: 0.5em;
+}
+
+.table__footer__title,
+.cart__resume__legend {
+  font-size: 1.2rem;
+}
+
+.table__footer__price,
+.cart__resume__price {
+  font-size: 2rem;
+  color: #c80000;
+}
+
+/* Fin panier */
+
+/* Début formulaire */
+
+#cart {
+  max-width: 600px;
+  margin: 150px auto 0 auto;
+}
+
+.cart__section {
+  border-bottom: 1px solid #ccc;
+  padding: 1em 0;
+}
+
+.cart__section__title {
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-bottom: 1.8em;
+}
+
+.form__row {
+  display: flex;
+}
+
+.form__column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.fieldset {
+  margin-top: 1em;
+}
+
+.fieldset__title {
+  font-weight: bold;
+  color: #666;
+  font-size: 1.2rem;
+  margin-bottom: 1.5em;
+}
+
+.checkbox-label,
+.radio-label,
+.text-label,
+.textarea-label,
+.text-input {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.radio-label,
+.checkbox-label {
+  line-height: 1.5rem;
+}
+
+.text-label,
+.textarea-label {
+  margin: 0.6em;
+}
+
+#street-label {
+  margin-top: 0;
+}
+
+.text-input,
+.textarea {
+  width: 100%;
+  background-color: #f7f7f7;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 0.5em 0.5em;
+  text-align: center;
+}
+
+/* Fin formulaire */
+
+/* Bas de la page (résumé prix + boutons) */
+
+.cart__resume {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  align-items: center;
+  box-shadow: 0px 3px 4px 0px rgba(196, 196, 196, 1);
+  width: 95%;
+  border-radius: 5px;
+  padding: 2em 1.8em;
+  margin: 0 auto;
+}
+
+.cart__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart__button {
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding: 0.8em 1.5em;
+  border-radius: none;
+  background-color: #efefef;
+  border: 1px solid transparent;
+  transition: background-color 0.5s;
+}
+
+.cart__button:hover {
+  background-color: #f7f7f7;
+  border-color: #efefef;
+}
+
+.cart__button--submit {
+  color: white;
+  background-color: #c80000;
+}
+.cart__button--submit:hover {
+  background-color: #f75959;
+  border-color: black;
+}
+
+/* Fin bas de page */
