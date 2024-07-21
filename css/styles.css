@@ -229,9 +229,6 @@ on symbolise ça en BEM avec -- */
     font-size: 1.3em;
     margin: .5em 0;
 }
-#form__delivery{
-    
-}
 .price__value{
     background-color: #c80000;
     align-items: center;
@@ -261,7 +258,7 @@ legend{
     border-top: 1px solid rgb(125, 125, 125); 
     margin-bottom: 2.5rem;   
 }
-.choice__delivery, {
+.choice__delivery {
     padding-bottom: 1.5rem;
     display: block;
 }
